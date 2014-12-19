@@ -274,6 +274,14 @@ PRODUCT_PACKAGES += \
     e2fsck \
     setup_fs
 
+# Add Daul Display Settings app
+PRODUCT_PACKAGES += \
+    DualDisplaySettings
+
+# Add External Nav app
+PRODUCT_PACKAGES += \
+    ExternalNav
+
 # copy permission files
 FRAMEWORK_ETC_PATH := frameworks/native/data/etc
 PERMISSIONS_PATH := system/etc/permissions
