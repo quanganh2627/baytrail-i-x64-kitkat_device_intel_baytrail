@@ -206,10 +206,20 @@ OVERRIDE_RS_DRIVER := libRSDriver_intel7.so
 
 #Camera
 ADDITIONAL_BUILD_PROPERTIES += \
-				ro.camera.number=1 \
-				ro.camera.0.devname=/dev/video0 \
-				ro.camera.0.facing=front \
-				ro.camera.0.orientation=0
+                                ro.camera.number=4 \
+                                ro.camera.0.devname=/dev/video0 \
+                                ro.camera.0.facing=front \
+                                ro.camera.0.orientation=0 \
+                                ro.camera.1.devname=/dev/video1 \
+                                ro.camera.1.facing=front \
+                                ro.camera.1.orientation=0 \
+                                ro.camera.2.devname=/dev/video2 \
+                                ro.camera.2.facing=front \
+                                ro.camera.2.orientation=0 \
+                                ro.camera.3.devname=/dev/video3 \
+                                ro.camera.3.facing=front \
+                                ro.camera.3.orientation=0
+
 
 # Define Platform Sensor Hub firmware name
 SENSORHUB_FW_NAME := psh_byt_m_crb.bin
