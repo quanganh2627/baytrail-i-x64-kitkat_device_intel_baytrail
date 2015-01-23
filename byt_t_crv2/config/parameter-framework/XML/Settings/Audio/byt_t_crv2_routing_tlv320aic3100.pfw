@@ -10,9 +10,10 @@ supDomain: Routing.Mute
 
 		domain: MainMic
 			conf: Unmute
-				ALL
+				ANY
 					SelectedInputDevice Includes Main
-					OpenedCaptureRoutes Includes HwCodecMedia
+					SelectedInputDevice Includes Back
+				OpenedCaptureRoutes Includes HwCodecMedia
 
 				/Audio/TI/INPUT/BUILTIN_MIC/ENABLED = 1
 
@@ -75,9 +76,10 @@ supDomain: Routing.Enable
 
 		domain: MainMic
 			conf: Enable
-				ALL
+				ANY
 					SelectedInputDevice Includes Main
-					OpenedCaptureRoutes Includes HwCodecMedia
+					SelectedInputDevice Includes Back
+				OpenedCaptureRoutes Includes HwCodecMedia
 
 				/Audio/TI/MIXER/P_INPUT/MIC1LP/SWITCH = 2
 				/Audio/TI/MIXER/M_INPUT/MIC1LM/SWITCH = 2
