@@ -355,6 +355,10 @@ PRODUCT_PROPERTY_OVERRIDES += persist.tel.hot_swap.support=true
 PRODUCT_PACKAGES += \
     VppSettings
 
+# Intel dynaudiooutputsettings
+PRODUCT_PACKAGES += \
+    DynamicAudioOutputSettings
+
 # serialno based on sata device
 PRODUCT_PACKAGES += \
     serialno
