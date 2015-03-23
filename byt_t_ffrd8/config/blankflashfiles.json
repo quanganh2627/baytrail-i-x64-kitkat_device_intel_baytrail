@@ -3,8 +3,7 @@
    {"filename":"flash-buildbot.xml", "name":"default", "flashtype":"fastboot_dnx"},
    {"filename":"installer.cmd", "name":"no_dnx"},
    {"filename":"flash-EraseFactory.xml", "name":"erase_factory", "flashtype":"fastboot_dnx"},
-   {"filename":"flash-no-dnx.xml", "name":"no_dnx", "flashtype":"fastboot"},
-   {"filename":"flash-rvp8.xml", "name":"rvp8", "flashtype":"fastboot_dnx"}
+   {"filename":"flash-no-dnx.xml", "name":"no_dnx", "flashtype":"fastboot"}
   ],
 "commands":
   [{"type":"prop", "target":"INSTALLED_BUILD_PROP_TARGET"},
@@ -15,8 +14,7 @@
    {"type":"foem", "arg":"wipe ESP", "desc":"Wiping ESP partition", "mandatory":false},
    {"type":"foem", "arg":"wipe reserved", "desc":"Wiping reserved partition", "mandatory":false},
    {"type":"foem", "arg":"start_partitioning", "desc":"Start partitioning."},
-   {"type":"fflash", "partition":"/tmp/partition.tbl", "target":"TARGET_PARTITION_TABLE", "desc":"Push the new partition table to the device."},
-   {"type":"foem", "arg":"partition /tmp/partition.tbl", "desc":"Apply the new partition scheme."},
+   {"type":"fflash", "partition":"gpt", "target":"TARGET_PARTITION_TABLE", "desc":"Apply the new partition table to the device."},
    {"type":"fformat", "partition":"factory", "restrict":["erase_factory", "no_dnx"]},
    {"type":"ferase", "partition":"system"},
    {"type":"fformat", "partition":"cache"},
