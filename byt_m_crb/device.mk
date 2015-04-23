@@ -22,15 +22,10 @@ PRODUCT_MODEL := byt_m_crb
 
 # Enable/disable Intel ISG enhanced feature
 # Noted: device.mk loaded before BoardConfig.mk
-USE_ISG_FEATURE := true
+USE_MULTI_CAMERA_FEATURE := false
 
-ifeq ($(USE_ISG_FEATURE), true)
-    USE_ISG_MULTI_CAMERA_FEATURE := true
-else
-    USE_ISG_MULTI_CAMERA_FEATURE := false
-endif
 
-ifeq ($(USE_ISG_MULTI_CAMERA_FEATURE), true)
+ifeq ($(USE_MULTI_CAMERA_FEATURE), true)
 
     USE_ISG_MULTI_CAMERA_ALL_SHOW := true
     USE_ISG_MULTI_CAMERA_ONE_SHOW := false
