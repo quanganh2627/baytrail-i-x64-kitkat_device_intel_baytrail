@@ -259,10 +259,10 @@ PRODUCT_PACKAGES += \
     camera.$(PRODUCT_DEVICE)
 
 # IntelCamera Parameters extensions
-PRODUCT_PACKAGES += \
-    libintelcamera_jni \
-    com.intel.camera.extensions \
-    com.intel.camera.extensions.xml
+#PRODUCT_PACKAGES += \
+#    libintelcamera_jni \
+#    com.intel.camera.extensions \
+#    com.intel.camera.extensions.xml
 
 # video encoder and camera
 PRODUCT_PACKAGES += \
