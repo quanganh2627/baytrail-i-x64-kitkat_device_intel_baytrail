@@ -259,6 +259,9 @@ on post-fs
     # Disable global scaling from HW compositor
     setprop persist.sys.hwc.globalscaling 0
 
+    # Disallow MDS to dynamically alter the mode HSD#4995059
+    setprop persist.sys.hwc.modechange 0
+
 # additional baytrail initialization
 service hdcpd /system/bin/hdcpd
     class main
